@@ -25,3 +25,4 @@ cat $1 | grep -e HIRAGANA -e KATAKANA -e CJK | sed -e "s/.*code=\"\([^\"]*\)\".*
 do
   echo $line | sed -e "s/0x/\\\u/" >> output.txt
 done
+echo Finish!
